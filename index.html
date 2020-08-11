@@ -2,14 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <script src="jscolor/jscolor.js"></script>
     <script defer src="./index.js"></script>
-    <title>Document</title>
+    <title>Local Storage API Demo</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Bitter|Ubuntu+Mono"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <div id="container">
-      <h1>Web Storage <span></span></h1>
+      <h1>Web Storage Demo <span></span></h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo
         aspernatur incidunt nulla facilis amet, neque quod impedit error sunt,
@@ -19,12 +26,12 @@
       <form action="">
         <div class="field">
           <label for="bgcolor">Choose a background color</label>
-          <input id="bgcolor" />
+          <input class="color" value="66ff00"  id="bgcolor" />
         </div>
         <div class="field">
           <label for="font">Choose a font</label>
           <select id="font">
-            <option value="Ubuntu Mono">Monospace</option>
+            <option value=" 'Ubuntu Mono' " selected>Monospace</option>
             <option value="'Bitter',serif">Serif</option>
             <option value="'Open Sans Condensed', sans-serif"
               >Sans-serif</option
