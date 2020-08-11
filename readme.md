@@ -48,7 +48,7 @@ Those values are then applied to an html element
   document.getElementById('bgcolor').value = currentColor;
     htmlElem.style.backgroundColor = '#' + currentColor;
 ```
-Last, any changes to the input form trigger a change.
+Last, the onchange method is applied so that any changes to the input form trigger a change.
 
 ```
 bgcolorForm.onchange = populateStorage;
