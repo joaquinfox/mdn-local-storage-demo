@@ -2,7 +2,7 @@ html,
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 #container {
@@ -28,15 +28,11 @@ form {
   display: flex;
   padding: 1%;
 }
-form .field input {
-  width: 49%;
-  line-height: 1.5;
-}
 .field label {
   flex: 1;
 }
 
-.field input {
+.field input,
+select {
   flex: 2;
-  padding-right: 1%;
 }

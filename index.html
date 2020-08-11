@@ -18,24 +18,50 @@
     <div id="container">
       <h1>Web Storage Demo <span></span></h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo
-        aspernatur incidunt nulla facilis amet, neque quod impedit error sunt,
-        ullam sequi necessitatibus sapiente laboriosam fuga facere, omnis eos
-        itaque.
+        This is an exercise inspired by
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API"
+          >this</a
+        >
+        excellent MDN tutorial. It demonstrates the
+        <a
+          href="https://html.spec.whatwg.org/multipage/webstorage.html#introduction-15"
+          >W3C Web Storage API</a
+        >.
       </p>
-      <form action="">
+      <p>
+        Web storage was introduced as an alternative to
+        <a
+          href="https://html.spec.whatwg.org/multipage/references.html#refsCOOKIES"
+          >HTTP cookies</a
+        >. Like cookies, it offers a way for a server to keep track of who it is
+        talking to on the client side.
+      </p>
+      <p>
+        Web storage comes in two flavors localStorage which persists beyond the
+        current session and sessionStorage which associates multiple windows to
+        a single session. For a discussion see the <a href="">readme.md</a>
+      </p>
+      <p>
+        In this demo your color choice will be stored to localStorage. If you
+        close the window and come back, your choice will persist. Your choice of
+        font on the other hand is stored to sessionStorage. This will reset to
+        the default ()
+      </p>
+
+      <form>
         <div class="field">
           <label for="bgcolor">Choose a background color</label>
-          <input class="color" value="66ff00"  id="bgcolor" />
+          <input class="color" value="66ff00" id="bgcolor" />
         </div>
         <div class="field">
           <label for="font">Choose a font</label>
           <select id="font">
-            <option value=" 'Ubuntu Mono' " selected>Monospace</option>
-            <option value="'Bitter',serif">Serif</option>
-            <option value="'Open Sans Condensed', sans-serif"
-              >Sans-serif</option
-            >
+            <option value="'Ubuntu Mono'" selected>Monospace</option>
+            <option value="'Bitter', serif">Serif</option>
+            <option value="'Open Sans Condensed', sans-serif">
+              Sans-serif
+            </option>
           </select>
         </div>
       </form>
