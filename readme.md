@@ -2,7 +2,7 @@
 
 ## Overview and purpose
 
-This is an exercise inspired by an MDN [article](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API) on the Web Storage API. It also gave me an excuse to tool around with the excellent color picker API, [jscolors.com]{https://jscolor.com/}.
+This is an exercise inspired by this MDN [article](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API) on the Web Storage API. It uses an excellent color picker API, [jscolors.com](https://jscolor.com/).
 
 ### Web Storage
 
@@ -55,5 +55,5 @@ bgcolorForm.onchange = populateStorage;
 
 ```
 ### jscolors.com
-This demo makes use of [jscolors.com]{https://jscolor.com/} to provide the color slider in the input form.
+This demo makes use of [jscolors.com](https://jscolor.com/) to provide the color slider in the input form.
 The documentation is good and the implementation is simple but it does require a "class='color'" be set on the input.
